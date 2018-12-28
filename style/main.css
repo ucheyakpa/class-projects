@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.6em;
+    background: #ccc;
+    color: #fff;
+    padding-top: 100px;
+}
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* header */
+#mainheader {
+    background: brown;
+    /* overflow: auto; */
+    /* height: 100px; */
+    position: fixed;
+    top: 0;     
+    z-index: 5;
+    width: 100%;
+    
+}
+
+#mainheader .container .logo {
+    float: left;
+    overflow: hidden;
+    margin-top: 10px;
+    
+}
+#mainheader .container .logo h1{
+    float: left;
+    display: inline;
+    margin-top: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+#mainheader .container .logo img {
+    max-width: 100%;
+    width: 70px;
+    float: left;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* toggle */
+.togglebar {
+    width: 100%;
+    text-align: right;
+    padding: 0 20px;
+    font-size: 20px;
+    display: none;
+}
+#mainheader .container #nav{
+    float: right;
+    list-style: none;
+}
+#mainheader .container #nav li{
+    display: inline;
+    float: left;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+/* showcase */
+#showcase {
+    background: url('../img/biz-light.jpeg');
+    background-position: top center;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 500px;
+    
+}
+
+#showcase .container h1{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+#showcase .container p{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(197, 190, 190);
+}
+
+
+/* newsletter */
+#newsletter {
+    background: #255;
+    height: 70px;
+}
+
+#newsletter span {
+    float: left;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#newsletter #subscribe {
+    float: right;
+}
+
+#newsletter input  {
+    float: left;
+    width: 350px;
+    padding: 8px;
+    margin-top: 15px;
+    position: relative;
+    left: 20px;
+}
+
+#newsletter button  {
+    float: left;
+    width: 100px;
+    padding: 9px;
+    background: brown;
+    border: none;
+    margin-top: 15px;
+    position: relative;
+    left: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+
+#callout {
+    margin-top: 15px;
+}
+#callout .box{
+    float: left;
+    display: inline;
+    width: 25%;
+    padding: 18px;
+}
+
+#callout .box .fa {
+    border: dashed 2px #000;
+    border-radius: 50px;
+    margin-left: 35px;
+    padding: 10px;
+}
+#callout .box p{
+    color: black;
+}
+
+.box h1 {
+    color: #255; 
+}
+#slideShow {
+    position: relative;
+}
+
+
+#slideShow h1 {
+    color: #255;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#slideShow #imageNext img {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+}
+
+#slideShow #imageNext #left-arrow {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    font-size: 30px;
+}
+
+#slideShow #imageNext #right-arrow {
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    font-size: 30px;
+}
+
+footer {
+    background: #000;
+    /* padding: 20px;
+    text-align: center; */
+
+}
+footer span {
+    font-size: 18px;
+}
+
+footer .quick {
+    float: left;
+    width: 33.333%;
+    padding: 10px;
+
+}
+footer .quick.link ul {
+    list-style: none;
+}
+footer .quick.link li {
+    margin-bottom: 10px;
+    /* border-bottom: solid 3px rgba(100,100,100,0.3); */
+}
+
+footer .quick.degree span {
+    color: green;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+footer .quick.degree .second-degree {
+    margin-top: 20px;
+}
+.quick-contact {
+    color: white !important;
+    padding: 10px;
+    border-radius: 50%;
+    border: solid white 2px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+footer .quick.contact span {
+    margin-top: 20px;
+}
+/* for tab device responsive  */
+@media only screen and (max-width: 992px){
+    #mainheader {
+       background-color:#9c9467;
+    }
+
+    #mainheader .container #nav {
+        display: block;
+        width: 100%;
+    }
+    #showcase {
+        margin-top: 60px;
+        padding-top: 20px;
+    }
+    #newsletter {
+        height: 110px;
+    }
+    #newsletter span {
+        display: block;
+    }
+    #newsletter #subscribe {
+        float: left;
+    }
+    #newsletter #subscribe input, #newsletter #subscribe button {
+        left: 0;
+        padding-bottom: 10px;
+        
+    }
+    #newsletter #subscribe input{
+        width: 500px;
+    }
+    #callout .box {
+        width: 50%;
+        /* padding: 40px;   */
+    }
+    footer .quick {
+        width: 50%;
+    }
+}
+
+/* for mobile device */
+@media only screen and (max-width: 480px){
+    #mainheader{
+        background: none;
+        position: relative;
+        top: 0;
+        width: 100%;
+        background: #255;
+    }
+    body{
+        padding-top: 0;     
+    }
+    #nav{
+        background-color: #000;
+        position: relative;
+        top: 104px;
+    }
+    .togglebar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        
+        
+    }
+    .bar{
+        color: #fff !important;
+        font-size: 30px !important;
+        left: 194px;
+        position: relative;    
+        top: 34px;
+    }
+    
+    #mainheader .container .logo h1 {
+        font-size: 16px;
+    }
+    
+    #nav ul{
+        position: relative;
+        top: 11px;
+    }
+    #mainheader .container #nav li {
+        
+        width: 200px;
+        height: 60px;
+        position: relative;
+        margin-top: 10px;
+        padding-left: 37px;
+        border-bottom: 2px solid rgba(100,100,100, 0.4);
+    }
+    
+    #sidebar {
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        left: -200px;
+        transition: all 500ms linear;
+    }
+    #sidebar.active{
+        left: 0px;
+    }
+    #showcase .container h1{
+        width: 100%;
+        margin-top: 200px;
+    }
+    #newsletter{
+        width: 100%;
+        display: block;
+        height: 200px;;
+    }
+    #newsletter input, #newsletter button {
+
+        float: none;
+        width: 375px;
+        padding: 8px;
+        margin-top: 15px;
+        position: relative;
+        left: 0px;
+    }
+    #callout .box {
+
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 18px;
+    
+    }
+
+    #slideShow #imageNext img {
+
+        max-width: 100%;
+        width: 100%;
+        height: 360px;
+    }
+    #slideShow #imageNext #left-arrow {
+
+        position: absolute;
+        top: 228px;        
+        left: 65px;       
+        font-size: 40px;      
+        padding: 10px;       
+        border-radius: 44%;
+    }
+
+    #slideShow #imageNext #right-arrow {
+
+        position: absolute;
+        top: 228px;        
+        right: 65px;       
+        font-size: 40px;      
+        padding: 10px;       
+        border-radius: 44%;
+    }
+    footer .quick {
+        width: 100%;
+    }
+}

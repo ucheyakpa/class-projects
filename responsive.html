@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsiveness</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            color: #aaa;
+        }
+
+        .mob {
+            color: red;
+            text-transform: uppercase;
+        }
+
+        .box {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        
+        .content {
+            background-color: cyan;
+            height: 150px;
+            width: 100%;            
+        }
+
+        .head-text {
+            transition: all 700ms ease-in-out;
+        }
+
+        /* Tab View */
+        @media only screen and (min-width: 480px) {
+            .mob {
+                color: #aaa;
+                text-transform: lowercase;
+            }
+            .tab {
+                color: red;
+                text-transform: uppercase;
+            }
+            .box {
+                width: 50%;
+                float: left;
+            }
+
+            .container {
+                overflow: auto;
+            }
+        }
+        /* desktop view */
+        @media only screen and (min-width: 992px) {
+            .box {
+                width: 25%;
+            }
+            .tab {
+                color: #aaa;
+                text-transform: lowercase;
+            }
+            .desktop {
+                color: red;
+                text-transform: uppercase;
+            }
+        } 
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="mob head-text">Mobile</h1>
+        <h1 class="tab head-text">Tab</h1>
+        <h1 class="desktop head-text">Desktop</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <div class="content"></div>
+        </div>
+        <div class="box">
+            <div class="content"></div>
+        </div>
+        <div class="box">
+            <div class="content"></div>
+        </div>
+        <div class="box">
+            <div class="content"></div>
+        </div>
+    </div>
+</body>
+</html>

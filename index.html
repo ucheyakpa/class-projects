@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Nath" content="web design">
+    <title>Web design</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/font-awesome.css">
+</head>
+<body>
+    <header id="mainheader">
+        <div class="container">
+            <div class="logo">
+                <img src="img/usti.jpg" alt="logo">
+                <h1>WorkDelightful</h1>
+            </div>
+            <div id="sidebar">
+                <div class="togglebar">
+                    <i class="fa fa-align-justify bar" onclick="togleSideBar()"></i>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#callout">Service</a></li>
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- showcase  -->
+    <section id="showcase">
+        <div class="container">
+            <h1>Web design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi maiores repudiandae animi omnis quam ullam laborum vero aperiam, illum architecto ipsum dolor sit amet consectetur, adipisicing elit. Sequi maiores repudiandae animi omnis quam ullam laborum vero aperiam, illum architecto ipsum dolor sit amet consectetur, adipisicing elit. Sequi maiores repudiandae animi omnis quam ullam laborum vero aperiam, illum architecto!</p>
+        </div>
+    </section>
+
+    <!-- newsletter  -->
+    <div id="newsletter">
+        <div class="container">
+            <span>Subscribe to our Newsletter</span>
+            <div id="subscribe">
+                <input type="email" placeholder="Enter email">
+                <button type="button"> Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="callout">
+        <div class="container">
+            <div class="box">
+                <a href="#"><i class="fa fa-apple fa-4x"></i></a>
+                <h1>Resources</h1>
+                <p>Lorem ipsum dolor sit amet consectetur impedit? Velit blanditiis ratione molestiae assumenda adipisci, quis voluptas voluptate suscipit fuga error eaque non, repudiandae natus eius! Voluptas, earum, dolor aperiam optio ea perspiciatis sequi eligendi animi esse enim, sed modi fugiat!</p>
+            </div>
+            <div class="box">
+                <a href="#"><i class="fa fa-bell fa-4x"></i></a>
+                <h1>Address Book</h1>
+                <p>Lorem ipsum dolor sit amet consectetur sunt impedit? Velit blanditiis ratione molestiae assumenda adipisci, quis voluptas voluptate suscipit fuga error eaque non, repudiandae natus eius! Voluptas, earum, dolor aperiam optio ea perspiciatis sequi eligendi animi esse enim, sed modi fugiat!</p>
+            </div>
+
+            <div class="box">
+                <a href="#"><i class="fa fa-cogs fa-4x"></i></a>
+                <h1>Cogs in details</h1>
+                <p>Lorem ipsum dolor sit amet consectetur sunt impedit? Velit blanditiis ratione molestiae assumenda adipisci, quis voluptas voluptate suscipit fuga error eaque non, repudiandae natus eius! Voluptas, earum, dolor aperiam optio ea perspiciatis sequi eligendi animi esse enim, sed modi fugiat!</p>
+            </div>
+
+            <div class="box">
+                <a href="#"><i class="fa fa-empire fa-4x"></i></a>
+                <h1>Become Empire</h1>
+                <p>Lorem ipsum dolor sit amet consectetur edit? Velit blanditiis ratione molestiae assumenda adipisci, quis voluptas voluptate suscipit fuga error eaque non, repudiandae natus eius! Voluptas, earum, dolor aperiam optio ea perspiciatis sequi eligendi animi esse enim, sed modi fugiat!</p>
+            </div>
+        </div>
+    </section>
+
+    <article id="slideShow">
+        <div class="container">
+            <h1>our Work and resources</h1>
+            <div id="imageNext">
+                <img src="img/Dollar Necklace.gif" alt="Necklace" id="slide">
+                <button id="left-arrow" onclick="mySlide('prev')"><</button>
+                <button id="right-arrow" onclick="mySlide('next')">></button>
+            </div>
+        </div>
+    </article>
+    
+    <footer>
+        <div class="container">
+            <div class="quick contact">
+                <h1>Contact us</h1>
+                <a href="#"><i class="fa fa-facebook fa-2x quick-contact"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x quick-contact"></i></a>
+                <a href="#"><i class="fa fa-youtube fa-2x quick-contact"></i></a><br>
+                <span>+23408168590872</span><br>
+                <span>info@grandrey.com</span>
+            </div>
+            <div class="quick link">
+                <h1>Quick Link</h1>
+                <ul>
+                   <a href="#"><li>interest</li></a>
+                   <a href="#"><li>Html &Html5</li></a>
+                   <a href="#"><li>Css & Css3</li></a>
+                   <a href="#"><li>JavaScript</li></a>
+                   <a href="#"><li>Boostrap</li></a>
+                   <a href="#"><li>PHP</li></a>
+                </ul>
+            </div>
+            <div class="quick degree">
+                <h1>Author</h1>
+                <span>John Doe</span><br>
+                <p>Phd, Bsc</p>
+                <div class="second-degree">
+                    <span>Sammy Dav</span><br>
+                    <p>Phd, Mba, Bsc</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="myScript.js"></script>
+</body>
+</html>
